@@ -1,2 +1,0 @@
-[console_scripts]
-ctracker = CommandTracker.monitor_tool:main
