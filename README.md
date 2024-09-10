@@ -14,7 +14,7 @@ CommandTracker is a Python tool designed to execute a command and monitor its re
 You can install CommandTracker via pip:
 
 ```bash
-pip install commandtracker
+pip install CommandTracker
 ```
 
 ## Usage
