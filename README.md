@@ -34,16 +34,16 @@ ctracker monitor php artisan calc --date=2024-01-01
 ### Example Output:
 
 ```bash
-Iniciando proceso con PID 12345...
+Starting process with PID 12345...
 
 Output of your command...
 
-Proceso terminado.
-Tiempo total de ejecución: 10.25 segundos.
+Process finished.
+Total execution time: 10.25 seconds.
 
-Estadísticas de uso de recursos:
-Promedio de uso de CPU: 35.67%
-Máximo uso de memoria: 120.45 MB
+Resource usage statistics:
+Average CPU usage: 35.67%
+Maximum memory usage: 120.45 MB
 ```
 
 ## Requirements
