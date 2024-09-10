@@ -28,7 +28,7 @@ ctracker monitor <command>
 For example:
 
 ```bash
-ctracker monitor php artisan calcular:liquidaciones --fecha=2024-01-01
+ctracker monitor php artisan calc --date=2024-01-01
 ```
 
 ### Example Output:
