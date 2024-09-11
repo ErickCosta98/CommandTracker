@@ -5,6 +5,10 @@ on:
     branches:
       - dev     # Desplegar a TestPyPI en la rama 'dev'
       - main    # Desplegar a PyPI en la rama 'main'
+    paths-ignore:
+      - 'README.md'
+      - 'SECURITY.md'
+      - 'LICENSE'
 
 jobs:
   build-deploy:

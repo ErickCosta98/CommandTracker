@@ -18,7 +18,7 @@ def run_command(command):
     start_time = time.time()
     process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     pid = process.pid
-    print(f"Iniciando proceso con PID {pid}...")
+    print(f"Starting process with PID {pid}...")
 
     cpu_usage = []
     memory_usage = []
@@ -41,26 +41,26 @@ def run_command(command):
         if stderr:
             print(f"ERROR: {stderr.strip()}")
     except Exception as e:
-        print(f"Error en la ejecución: {str(e)}")
+        print(f"Execution error: {str(e)}")
 
     monitor_thread.join()
 
     end_time = time.time()
     execution_time = end_time - start_time
-    print("\nProceso terminado.")
-    print(f"Tiempo total de ejecución: {execution_time:.2f} segundos.")
+    print("\nProcess finished.")
+    print(f"Total execution time: {execution_time:.2f} seconds.")
 
     if cpu_usage:
-        print("\nEstadísticas de uso de recursos:")
-        print(f"Promedio de uso de CPU: {sum(cpu_usage)/len(cpu_usage):.2f}%")
-        print(f"Máximo uso de memoria: {max(memory_usage):.2f} MB")
+        print("\nResource usage statistics:")
+        print(f"Average CPU usage: {sum(cpu_usage)/len(cpu_usage):.2f}%")
+        print(f"Maximum memory usage: {max(memory_usage):.2f} MB")
 
 
 def main():
     parser = argparse.ArgumentParser(description="Tool to execute and monitor resource usage of commands.")
     subparsers = parser.add_subparsers(dest="command")
 
-    # Subcomando 'monitor'
+    # Subcommand 'monitor'
     monitor_parser = subparsers.add_parser("monitor", help="Monitor CPU and memory usage of a command")
     monitor_parser.add_argument('exec_command', nargs=argparse.REMAINDER, help='The command to monitor (e.g., "php artisan ...")')
 
@@ -70,4 +70,3 @@ def main():
         run_command(args.exec_command)
     else:
         parser.print_help()
-

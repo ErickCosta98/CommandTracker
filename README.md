@@ -1,4 +1,5 @@
-| Package | [![PyPI Latest Release](https://img.shields.io/pypi/v/commandtracker.svg)](https://pypi.org/project/CommandTracker/) |
+[![PyPI Latest Release](https://img.shields.io/pypi/v/commandtracker.svg)](https://pypi.org/project/CommandTracker/) [![GitHub Release Date](https://img.shields.io/github/release-date/ErickCosta98/CommandTracker)](https://github.com/ErickCosta98/CommandTracker/releases) [![GitHub License](https://img.shields.io/github/license/ErickCosta98/CommandTracker)](https://github.com/ErickCosta98/CommandTracker/blob/main/LICENSE)
+
 # CommandTracker
 
 CommandTracker is a Python tool designed to execute a command and monitor its resource usage in real time. It tracks CPU and memory consumption, providing valuable performance metrics like average CPU load and peak memory usage. This tool is ideal for developers and system administrators looking to optimize the performance of commands or processes.
@@ -34,16 +35,16 @@ ctracker monitor php artisan calc --date=2024-01-01
 ### Example Output:
 
 ```bash
-Iniciando proceso con PID 12345...
+Starting process with PID 12345...
 
 Output of your command...
 
-Proceso terminado.
-Tiempo total de ejecución: 10.25 segundos.
+Process finished.
+Total execution time: 10.25 seconds.
 
-Estadísticas de uso de recursos:
-Promedio de uso de CPU: 35.67%
-Máximo uso de memoria: 120.45 MB
+Resource usage statistics:
+Average CPU usage: 35.67%
+Maximum memory usage: 120.45 MB
 ```
 
 ## Requirements
@@ -62,7 +63,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Future Enhancements
 
 Planned features for future releases include:
-- Historical resource tracking.
-- Graph generation for resource usage.
-- Alert system for resource thresholds.
+• Generation of graphs to visualize resource usage.  
+• Historical logging of command execution.  
+• Automatic alerts if a process exceeds certain CPU or memory thresholds.  
+• Stress testing to simulate intensive workloads.
+
 
