@@ -1,4 +1,5 @@
-[![PyPI Latest Release](https://img.shields.io/pypi/v/commandtracker.svg)](https://pypi.org/project/CommandTracker/) [![GitHub Release Date](https://img.shields.io/github/release-date/ErickCosta98/CommandTracker)](https://github.com/ErickCosta98/CommandTracker/releases) [![GitHub License](https://img.shields.io/github/license/ErickCosta98/CommandTracker)](https://github.com/ErickCosta98/CommandTracker/blob/main/LICENSE)
+[![PyPI Latest Release](https://img.shields.io/pypi/v/commandtracker.svg)](https://pypi.org/project/CommandTracker/) [![PyPI - Downloads](https://img.shields.io/pypi/dm/CommandTracker)](https://pypi.org/project/CommandTracker/)
+ [![GitHub Release Date](https://img.shields.io/github/release-date/ErickCosta98/CommandTracker)](https://github.com/ErickCosta98/CommandTracker/releases) [![GitHub License](https://img.shields.io/github/license/ErickCosta98/CommandTracker)](https://github.com/ErickCosta98/CommandTracker/blob/main/LICENSE)
 
 # CommandTracker
 
