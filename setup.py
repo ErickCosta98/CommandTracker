@@ -2,13 +2,13 @@ from setuptools import setup, find_packages
 
 setup(
     name='CommandTracker',  # Nombre del paquete
-    version='0.1.3',  # Versión inicial
+    version='0.1.4',  # Versión inicial
     packages=find_packages(),  # Encuentra todos los paquetes en tu directorio
     install_requires=[
         'psutil',  # Dependencia para monitorear recursos
         'plotext'
     ],
-     entry_points={
+    entry_points={
         'console_scripts': [
             'ctracker=CommandTracker.cli:main',  # Crea el comando 'ctracker'
         ],
@@ -18,7 +18,8 @@ setup(
     description='Paquete para ejecutar comandos y monitorear uso de CPU y memoria',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/ErickCosta98/CommandTracker',  # Enlace al repositorio del proyecto
+    # Enlace al repositorio del proyecto
+    url='https://github.com/ErickCosta98/CommandTracker',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
@@ -26,4 +27,3 @@ setup(
     ],
     python_requires='>=3.6',  # Versión mínima de Python
 )
-

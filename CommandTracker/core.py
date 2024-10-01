@@ -3,6 +3,8 @@ import threading
 import time
 from CommandTracker.monitor import monitor_resources
 from CommandTracker.graph import generate_graph
+from CommandTracker.history import create_history
+
 
 def run_command(command, graph=False):
     start_time = time.time()
@@ -10,14 +12,16 @@ def run_command(command, graph=False):
     if isinstance(command, str):
         command = command.split()
 
-    process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    process = subprocess.Popen(
+        command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     pid = process.pid
     print(f"Starting process with PID {pid}...")
 
     cpu_usage = []
     memory_usage = []
 
-    monitor_thread = threading.Thread(target=monitor_resources, args=(pid, cpu_usage, memory_usage))
+    monitor_thread = threading.Thread(
+        target=monitor_resources, args=(pid, cpu_usage, memory_usage))
     monitor_thread.start()
 
     try:
@@ -48,6 +52,7 @@ def run_command(command, graph=False):
         print("\nResource usage statistics:")
         print(f"Average CPU usage: {sum(cpu_usage)/len(cpu_usage):.2f}%")
         print(f"Maximum memory usage: {max(memory_usage):.2f} MB")
-        
         if graph:
             generate_graph(cpu_usage, memory_usage, execution_time)
+
+    create_history(command, execution_time, cpu_usage, memory_usage)
