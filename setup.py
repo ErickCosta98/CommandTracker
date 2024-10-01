@@ -6,10 +6,11 @@ setup(
     packages=find_packages(),  # Encuentra todos los paquetes en tu directorio
     install_requires=[
         'psutil',  # Dependencia para monitorear recursos
+        'plotext'
     ],
      entry_points={
         'console_scripts': [
-            'ctracker=CommandTracker.monitor_tool:main',  # Crea el comando 'ctracker'
+            'ctracker=CommandTracker.cli:main',  # Crea el comando 'ctracker'
         ],
     },
     author='Erick Costa',
