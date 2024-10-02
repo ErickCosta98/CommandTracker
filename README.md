@@ -64,10 +64,10 @@ ctracker monitor -g php artisan calc --date=2024-01-01
 ### Example Output:
 
 CPU usage graph:
-  ![cpu usage graph](./imgs/cpu_usage.png)
+  ![cpu usage graph](https://github.com/ErickCosta98/CommandTracker/blob/main/imgs/cpu_usage.png)
 
 Memory usage graph:
-  ![memory usage graph](./imgs/memory_usage.png)
+  ![memory usage graph](https://github.com/ErickCosta98/CommandTracker/blob/main/imgs/memory_usage.png)
 
 
 ## History logs
