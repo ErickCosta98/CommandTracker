@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='CommandTracker',  # Nombre del paquete
-    version='0.1.4',  # Versión inicial
+    version='0.1.4a',  # Versión inicial
     packages=find_packages(),  # Encuentra todos los paquetes en tu directorio
     install_requires=[
         'psutil',  # Dependencia para monitorear recursos
